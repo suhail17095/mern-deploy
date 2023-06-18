@@ -32,5 +32,5 @@ app.get("/home",(req,res)=>
 
 app.listen(PORT,()=>
 {
-    console.log("listening");
+    console.log("listening at port"+PORT);
 })
