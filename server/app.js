@@ -15,7 +15,7 @@ dotenv.config({path:"./config.env"})
 const PORT=process.env.PORT
 
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Origin", "https://mern-deploy-production-9a71.up.railway.app/");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
