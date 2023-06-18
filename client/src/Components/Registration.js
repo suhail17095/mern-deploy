@@ -19,7 +19,7 @@ function Registration() {
     const submit=()=>
     {
         const {name,email,phone,work,password,cpassword}=user
-        axios.post("http://localhost:3002/register",{name,email,phone,work,password,cpassword}).then((res)=>
+        axios.post("https://mern-deploy-production.up.railway.app/register",{name,email,phone,work,password,cpassword}).then((res)=>
         {
             alert(res.data);
         })

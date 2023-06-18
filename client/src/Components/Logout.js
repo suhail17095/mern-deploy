@@ -7,7 +7,7 @@ function Logout() {
     {
         axios({
             method: 'get',
-            url: "http://localhost:3002/logout",
+            url: "https://mern-deploy-production.up.railway.app/logout",
             config: {
               withCredentials: true,
               credentials: 'include',

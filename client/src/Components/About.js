@@ -10,7 +10,7 @@ function About() {
   const [user,setUser]=useState({name:"",email:"",phone:"",work:""})
     const aboutPage=()=>
     {
-      axios.post("http://localhost:3002/about",{
+      axios.post("https://mern-deploy-production.up.railway.app/about",{
         withCredentials: true,
         credentials: 'include',
         headers: {

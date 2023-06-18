@@ -8,7 +8,7 @@ function Home() {
   {
     axios({
       method: 'get',
-      url: "http://localhost:3002/home",
+      url: "https://mern-deploy-production.up.railway.app/home",
       config: {
         withCredentials: true,
         credentials: 'include',

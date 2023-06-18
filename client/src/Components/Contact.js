@@ -8,7 +8,7 @@ function Contact() {
   const [user,setUser]=useState({name:"",email:"",phone:"",message:""})
   useEffect(()=>
   { 
-    axios.post("http://localhost:3002/about",{
+    axios.post("https://mern-deploy-production.up.railway.app/about",{
       withCredentials: true,
       credentials: 'include',
       headers: {
@@ -53,7 +53,7 @@ function Contact() {
     const {name,email,phone,work}=user
     axios({
       method: 'post',
-      url: "http://localhost:3002/submit_message",
+      url: "https://mern-deploy-production.up.railway.app/submit_message",
       data: {name,email,phone,work},
       config: {
         withCredentials: true,

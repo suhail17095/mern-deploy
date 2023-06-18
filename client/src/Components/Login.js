@@ -25,7 +25,7 @@ function Login() {
         e.preventDefault()
         console.log("hello world")
         const {email,password}=user
-        axios.post("http://localhost:3002/login",{email,password}).then((res)=>
+        axios.post("https://mern-deploy-production.up.railway.app/login",{email,password}).then((res)=>
         {
             if(res.status === 400)
             {

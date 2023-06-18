@@ -14,7 +14,7 @@ dotenv.config({path:"./config.env"})
 
 const PORT=process.env.PORT
 
-app.use(cors({ credentials: true, origin:[ "http://localhost:3000","https://mern-frontend-virid.vercel.app"] }));
+app.use(cors({ credentials: true, origin:[ "http://localhost:3000","https://mern-deploy-production-9a71.up.railway.app/"] }));
 
 app.use(require("./route/auth"))
 
